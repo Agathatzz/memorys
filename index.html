@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memórias Escolares</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>MINHAS MEMÓRIAS DO COLEGIAL</h1>
+        <nav>
+            <button onclick="scrollToSection('fotos')">Fotos</button>
+            <button onclick="scrollToSection('conclusao')">Conclusão</button>
+        </nav>
+    </header>
 
+    <!-- Seção de fotos -->
+    <section id="fotos" class="gallery-section">
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="Site.Agatha.1.jpg" alt="Foto 1">
+                <h2>Eu e minha turma no 4°Ano, no passeio da vila dos animais</h2>
+                <p>Data: 17/06/2016</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Ahatha.2.jpg" alt="Foto 2">
+                <h2>Surpresa de aniversário para a professora Jacqueline</h2>
+                <p>Data: 25/10/2017</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Agatha.3.jpg" alt="Foto 3">
+                <h2>Dia em que conheci meus primeiros amigos do Morelli</h2>
+                <p>Data: 12/05/2019</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Agatha.4.jpg" alt="Foto 4">
+                <h2>Dia que fizemos cartinha ecompramos chocolate para as tias da limpeza</h2>
+                <p>Data: 22/11/2023</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Agatha.5.jpg" alt="Foto 5">
+                <h2>Eu e minhas amigas tirando foto com a Beca da formatura</h2>
+                <p>Data: 19/09/2024</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Agatha.6.jpg" alt="Foto 6">
+                <h2>Eu e meus amigos no churrasco da formatura</h2>
+                <p>Data: 29/09/2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusão -->
+    <section id="conclusao" class="conclusion-section">
+        <div class="thanks-box">
+            <h2>Agradecimento</h2>
+            <p>
+                Bom esses últimos anos foram anos de aprendizado, conquistas e realizações, além disso
+                também criei várias amizades que me fizeram dar várias risadas. No segundo ano, fomos
+                na gruta com a professora de geografia e formamos um grupo que até hoje a gente tem 
+                contato e conversamos. No terceirão, apesar de não estar todos os meus amigos na mesma
+                turma, estou muito animada por aproveitar meu último ano ao lado de pessoas que se
+                importam e cuidam de mim!!! Estou muito empolgada para a fomatura da turma pois será 
+                um momento de muita diversão e alegria ao lado de pessoas que sempre me apoiam e estão
+                ao meu lado nos melhores e piores momentos.
+            </p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Colégio Estadual Padre Cláudio Morelli - Agatha Thomaz Batista - N°01 - 3°E</p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
